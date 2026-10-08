@@ -10,7 +10,7 @@ Meu trabalho conecta as necessidades do negócio às estruturas dos sistemas que
 
 ## Projeto em destaque — Mapa de Glosas
 
-Este repositório reúne meus projetos demonstrativos de dados e Business Intelligence. Cada demo possui uma pasta própria com contexto, tecnologias, imagens e documentação.
+Este repositório reúne meus projetos baseado em caso reais, porém com dados demonstrativos de dados e Business Intelligence. Cada demo possui uma pasta própria com contexto, tecnologias, imagens e documentação.
 
 | Demo | Tema | Tecnologias | Material |
 | --- | --- | --- | --- |
