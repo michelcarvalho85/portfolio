@@ -4,6 +4,8 @@
 
 [← Voltar ao case](README.md)
 
+[História e requisitos registrados no formulário](HISTORIA-DO-PROJETO.md): público por função, perguntas de negócio, mudanças de escopo, rotina de atualização e situação da homologação.
+
 Esta descrição foi elaborada a partir da consulta SQL e dos metadados de Power Query e DAX disponíveis para análise. Os nomes técnicos abaixo são descrições conceituais. Não são reproduzidos nomes de objetos internos, códigos operacionais, endereços de conexão, documentos, dados pessoais ou a identidade da empresa. Participantes do negócio são mencionados somente por função; não são atribuídos cargos específicos sem comprovação.
 
 ## 1. Entendimento da necessidade e tradução dos requisitos
@@ -206,7 +208,7 @@ A proposta visual organiza cartões de indicadores, distribuições por dimensõ
 | Calendário | Cobertura das datas e propagação correta dos filtros |
 | DAX e visuais | Totais e percentuais coerentes no contexto selecionado |
 
-Esta tabela descreve critérios de validação, sem afirmar que todos tenham sido aprovados. A leitura dos arquivos confirma implementações e permite identificar pontos de atenção; não substitui homologação com o negócio. Não são divulgados volumes, valores ou resultados operacionais reais.
+Esta tabela descreve critérios de validação. O formulário recebido registra faturamento, glosa, glosa mantida, recebimento e imposto como validados e em acompanhamento, além da conferência da chave sem duplicidade na base avaliada. A recuperação permanece pendente, e o projeto está em homologação. Esses registros documentais não representam uma nova execução de testes nesta revisão. Não são divulgados volumes, valores ou identificadores operacionais reais.
 
 ## Como apresentar minha contribuição em uma entrevista
 

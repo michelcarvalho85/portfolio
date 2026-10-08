@@ -28,6 +28,8 @@ Uma necessidade da gestão do Faturamento deu origem a uma solução para reunir
 
 [Veja meu conhecimento aplicado em cada etapa: requisitos, SQL, Power Query, DAX e validação](projetos/01-mapa-de-glosas/ETAPAS-DO-PROJETO.md).
 
+[Da solicitação à homologação: história, perguntas de negócio e evolução do projeto](projetos/01-mapa-de-glosas/HISTORIA-DO-PROJETO.md).
+
 O case apresenta a necessidade do negócio, minha participação, a arquitetura, os desafios de granularidade e a leitura dos indicadores. A solução demonstra como transformar informações distribuídas no ERP em uma visão que conecta resumo e detalhamento.
 
 ## Como trabalho

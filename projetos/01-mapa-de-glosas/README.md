@@ -8,6 +8,10 @@
 
 ## Sobre o projeto
 
+**[História completa: solicitação, desenvolvimento, evolução do escopo e homologação](HISTORIA-DO-PROJETO.md)**
+
+**Status documentado:** em homologação. O formulário registra faturamento, glosa, glosa mantida, recebimento e imposto como validados e em acompanhamento; a recuperação permanece pendente de validação funcional, sem aceite definitivo do projeto registrado.
+
 O **Mapa de Glosas** é um projeto real de Análise de Dados e Business Intelligence desenvolvido na área hospitalar. Surgiu de uma necessidade da gestão do Faturamento para melhorar o acompanhamento das glosas e centralizar informações distribuídas entre diferentes estruturas do ERP.
 
 A solução reúne uma camada Oracle SQL de integração e cálculo financeiro com a análise no Power BI. O dashboard permite partir de uma visão sintética dos indicadores e chegar ao detalhamento necessário para investigar os registros e apoiar decisões do setor.
@@ -144,7 +148,7 @@ A base final foi estruturada para representar um item de atendimento. As etapas 
 
 As agregações reduzem o risco de multiplicação entre resultados financeiros, mas não corrigem automaticamente duplicidades existentes antes delas. UNION ALL preserva repetições entre níveis, e os filtros da base delimitam quais itens entram na análise. Esses pontos orientam a validação; não representam afirmação de duplicidade efetiva.
 
-A análise estática confirma a estrutura da SQL. Evidências de unicidade, conciliação e o desenho do modelo do Power BI ainda precisam ser incorporados à documentação pública de forma segura.
+A análise estática confirma a estrutura da SQL. O formulário registra conferência da chave composta sem duplicidade e descreve uma fato por item relacionada ao calendário em 1:N, com filtro da dimensão para a fato. A [história do projeto](HISTORIA-DO-PROJETO.md) diferencia os resultados documentados das verificações ainda pendentes, sem divulgar volumes ou identificadores internos.
 
 ## Power BI e apoio à análise
 

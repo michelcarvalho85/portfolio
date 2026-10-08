@@ -36,6 +36,8 @@ Os códigos de negócio originais não são reproduzidos. Cobertura do calendár
 
 ## Limites
 
+O formulário descreve o percentual de glosa mantida com resultado alternativo zero em `DIVIDE` e indica que a regra exata precisa ser validada. A extração do modelo não contém esse terceiro argumento. Os exemplos desta página seguem a extração; a versão vigente deve ser conferida no PBIX.
+
 Não foram identificadas nessa extração medidas explícitas de recuperação, quantidade de contas ou quantidade de atendimentos. A recuperação bruta existe na SQL e permanece pendente de validação funcional.
 
 Os valores da imagem pública são fictícios e não formam uma base conciliada. A inspeção das expressões confirma sua existência, sem certificar os números da ilustração ou a homologação do relatório.
