@@ -26,6 +26,8 @@ O valor para o negócio está em facilitar o acompanhamento das glosas e a inves
 
 ## Minha participação
 
+**[Leia o detalhamento de cada etapa e das competências aplicadas](ETAPAS-DO-PROJETO.md)** — requisitos, fontes, 11 CTEs, consolidação, Power Query, modelagem, DAX e validação.
+
 Fui responsável pelo entendimento da necessidade junto à área de negócio e pela tradução das regras do setor em uma solução analítica. Minha atuação abrangeu:
 
 - Levantamento e tradução das regras de negócio.
@@ -64,7 +66,7 @@ flowchart TD
     G --> H["Apoio à tomada de decisão"]
 ```
 
-A integração financeira é realizada na SQL. O modelo e as medidas do Power BI complementam o consumo analítico da base; suas configurações específicas ainda precisam ser documentadas.
+A integração financeira é realizada na SQL. O Power Query inspecionado consome essa consulta por meio do conector Oracle, sem etapas adicionais de transformação M após a fonte. O modelo inclui calendário, classificação de categorias e medidas DAX, descritos no [detalhamento técnico](ETAPAS-DO-PROJETO.md).
 
 ## Fluxo analítico
 
@@ -101,14 +103,15 @@ Os cinco indicadores abaixo possuem cálculos confirmados na consulta analisada.
 
 | Análise / medida | Situação da documentação |
 | --- | --- |
-| % de Glosa | Não calculado na SQL; implementação e definição da medida precisam ser verificadas no Power BI/DAX |
+| % de Glosa | Medida DAX identificada: valor glosado dividido pelo faturado |
+| % de Glosa Mantida, Imposto e Recebido | Medidas DAX identificadas: cada valor dividido pelo faturado |
 | % de Recuperação | Não calculado na SQL; medida e base de comparação dependem também da validação da recuperação |
 | Quantidade de Contas | A base contém referências de faturamento; conceito de conta e regra de contagem precisam ser confirmados |
 | Quantidade de Atendimentos | A base contém referências de atendimento; a contagem deve considerar os múltiplos itens por atendimento |
-| Evolução Mensal | Há data de atendimento disponível; calendário, medidas e referência temporal dos visuais precisam ser documentados |
+| Evolução Mensal | Data de atendimento disponível e calendário calculado identificado; cobertura das datas e uso nos visuais exigem verificação |
 | Análise por Convênio | O convênio está disponível na base para segmentação dos indicadores |
 
-Não foram presumidas fórmulas DAX ou medidas ainda não inspecionadas. Consulte o [escopo público das medidas](dax/medidas.md).
+Foram inspecionadas nove medidas DAX explícitas. Consulte as [definições com nomes genéricos](dax/medidas.md). Não foram identificadas, nessa extração, medidas explícitas de recuperação ou contagem de contas e atendimentos.
 
 ## Regras de negócio e qualidade dos dados
 
@@ -181,8 +184,8 @@ A consulta original é confidencial e permanece privada. O arquivo [mapa_glosas.
 | --- | --- |
 | ERP Hospitalar | Origem das informações e contexto dos processos |
 | Oracle SQL | Integração, CTEs, relacionamentos, agregações e cálculos financeiros |
-| Power Query | Tratamento de dados; etapas específicas a documentar |
-| DAX | Camada de medidas; expressões específicas a documentar |
+| Power Query | Consumo da consulta SQL nativa pelo conector Oracle |
+| DAX | Cinco medidas de soma, quatro percentuais, calendário e classificação de categorias |
 | Power BI | Modelagem, indicadores e análise dos registros |
 
 ## Competências demonstradas
@@ -212,6 +215,6 @@ Este case compartilha conceitos de negócio, métricas estruturais e uma imagem 
 
 A SQL original permanece na área privada, protegida pelas regras do [.gitignore](../../.gitignore). Imagens e exemplos públicos devem utilizar dados fictícios ou anonimização efetiva e passar por revisão antes da publicação.
 
-Esta edição é um case descritivo e visual, sem disponibilização de PBIX, SQL executável ou expressões DAX do ambiente original. A recuperação bruta permanece pendente de validação funcional. A imagem não substitui evidências de conciliação ou de funcionamento do relatório.
+Esta edição é um case descritivo e visual, sem disponibilização de PBIX ou SQL original executável. Os exemplos DAX utilizam nomes genéricos. A recuperação bruta permanece pendente de validação funcional. A imagem não substitui evidências de conciliação ou de funcionamento do relatório.
 
 [← Voltar ao portfólio](../../README.md)
