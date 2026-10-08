@@ -1,0 +1,59 @@
+# Sistema operacional e editores
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*.tmp
+~$*
+
+# Configurações locais, credenciais e certificados
+privado/
+*.env
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+credentials*
+secrets*
+tnsnames.ora
+sqlnet.ora
+listener.ora
+*.log
+
+# Dados de origem, exportações e materiais privados
+**/dados-reais/
+**/dados-brutos/
+**/privado/
+**/confidencial/
+**/exports/
+**/backups/
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.parquet
+*.db
+*.sqlite
+*.sqlite3
+*.dmp
+*.bak
+*.zip
+*.7z
+
+# Somente arquivos demonstrativos revisados podem ser versionados aqui
+!projetos/01-mapa-de-glosas/dados-demo/*.csv
+!projetos/01-mapa-de-glosas/dados-demo/*.tsv
+
+# Power BI: podem conter dados incorporados e conexões
+*.pbix
+*.pbit
+**/.pbi/
+*.abf
+*.rdl
+
+# O .gitignore não substitui a revisão de conteúdo antes da publicação.
+# Arquivos SQL, DAX, imagens e dados-demo também precisam de revisão.
